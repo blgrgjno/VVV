@@ -23,6 +23,13 @@ Vagrant.configure("2") do |config|
   # established on the host machine inside the guest. See the manual for ssh-add
   config.ssh.forward_agent = true
 
+  # Vagrant proxyconf
+  #if Vagrant.has_plugin?("vagrant-proxyconf")
+  #  config.proxy.http     = "http://10.0.2.2:8123/"
+  #  config.proxy.https    = "http://10.0.2.2:8123/"
+  #  config.proxy.no_proxy = "localhost,127.0.0.1,.example.com"
+  #end
+
   # Default Ubuntu Box
   #
   # This box is provided by Ubuntu vagrantcloud.com and is a nicely sized (332MB)
